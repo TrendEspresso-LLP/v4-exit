@@ -1,0 +1,1648 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CTRL",
+    "outputs": [
+      {
+        "internalType": "contract IController",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CTRL_ADDR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INTERFACE_ID_REQUIRED_ACCOUNT",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "Lib",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LibAave",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE",
+    "outputs": [
+      {
+        "internalType": "contract IERC2612",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE_ADDR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE_NAME",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION_NOTES",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "transferFrom_",
+        "type": "bool"
+      }
+    ],
+    "name": "adminWithdraw",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "transferFrom_",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "recipient_",
+        "type": "address"
+      }
+    ],
+    "name": "adminWithdrawToRecipient",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr_",
+        "type": "address"
+      }
+    ],
+    "name": "contractIsAccountSol",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "compliant",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "btcbAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertBTCBtoUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "btcLongAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertBTCLongToUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "btcShortAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertBTCShortToUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertUSDCtoBTCB",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertUSDCtoBTCLong",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertUSDCtoBTCShort",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "instructions_",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeDepositWithdraw",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "operation",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strategyNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountOwner",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountPortfolio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "teAmountOwner",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountInOutAAVE",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountHeldInPortfolio",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "directWithdrawInstructions_",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeDirectWithdraw",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToPortfolio",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "directWithdrawInstructions_",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeDirectWithdrawWithHeader",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToPortfolio",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "permissionByAddress_",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "permissionByNum_",
+        "type": "bytes32"
+      }
+    ],
+    "name": "decodePermission",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "num",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bytes20",
+            "name": "flags",
+            "type": "bytes20"
+          }
+        ],
+        "internalType": "struct PermissionObj",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "bytes_",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodePermissionBytes",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "num",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bytes20",
+            "name": "flags",
+            "type": "bytes20"
+          }
+        ],
+        "internalType": "struct PermissionObj",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr_",
+        "type": "address"
+      }
+    ],
+    "name": "decodePermissionFromControllerStorageByAddress",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "num",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bytes20",
+            "name": "flags",
+            "type": "bytes20"
+          }
+        ],
+        "internalType": "struct PermissionObj",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "num_",
+        "type": "uint256"
+      }
+    ],
+    "name": "decodePermissionFromControllerStorageByNum",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "num",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "bytes20",
+            "name": "flags",
+            "type": "bytes20"
+          }
+        ],
+        "internalType": "struct PermissionObj",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "swapInfo",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "swapPriceProtection",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapToMakeObj32",
+        "name": "swap",
+        "type": "tuple"
+      }
+    ],
+    "name": "decodeSwapToMake32",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes1",
+        "name": "exchangeId",
+        "type": "bytes1"
+      },
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_cashAmountToSwap",
+        "type": "int128"
+      },
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_assetAmountToSwap",
+        "type": "int128"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapCallDataExt",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "swapInfo_",
+        "type": "bytes32"
+      }
+    ],
+    "name": "decodeSwapToMake32_swapInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes1",
+        "name": "exchangeId",
+        "type": "bytes1"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "swapPriceProtection_",
+        "type": "bytes32"
+      }
+    ],
+    "name": "decodeSwapToMake32_swapPriceProtection",
+    "outputs": [
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_cashAmountToSwap",
+        "type": "int128"
+      },
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_assetAmountToSwap",
+        "type": "int128"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "tradeInfo_",
+        "type": "bytes32"
+      }
+    ],
+    "name": "decodeTradeInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "strategyHub",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strategyNum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "order",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "priceProtection_cashAmountPer1Asset",
+        "type": "uint64"
+      },
+      {
+        "internalType": "string",
+        "name": "withdrawAllDestinationIfFullExit",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_err",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeTraderJoeSwapError",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositFromOwner",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositFromPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teAmountToDepositIntoPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositIntoAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositIntoPortfolio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DepositToEncodeObj",
+        "name": "deposit_",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeDeposit",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "depositInstructions",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositFromOwner",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositFromPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teAmountToDepositIntoPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositIntoAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToDepositIntoPortfolio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DepositToEncodeObj[]",
+        "name": "deposits_",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "encodeDepositList",
+    "outputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "depositInstructions",
+        "type": "bytes[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToPortfolio_",
+        "type": "bool"
+      }
+    ],
+    "name": "encodeDirectWithdraw",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "directWithdrawInstructions",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToPortfolio_",
+        "type": "bool"
+      }
+    ],
+    "name": "encodeDirectWithdrawWithHeader",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "directWithdrawInstructions",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "num_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes20",
+        "name": "flags_",
+        "type": "bytes20"
+      }
+    ],
+    "name": "encodePermission",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr_",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes20",
+        "name": "flags_",
+        "type": "bytes20"
+      }
+    ],
+    "name": "encodePermissionsToUpdate",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "exchangeId",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "int128",
+            "name": "swapPriceProtection_cashAmountToSwap",
+            "type": "int128"
+          },
+          {
+            "internalType": "int128",
+            "name": "swapPriceProtection_assetAmountToSwap",
+            "type": "int128"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapsToEncodeObj32",
+        "name": "swap_",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeSwapToMake32",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "swapInfo",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "swapPriceProtection",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapToMakeObj32",
+        "name": "swap",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "exchangeId",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "int128",
+            "name": "swapPriceProtection_cashAmountToSwap",
+            "type": "int128"
+          },
+          {
+            "internalType": "int128",
+            "name": "swapPriceProtection_assetAmountToSwap",
+            "type": "int128"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapsToEncodeObj32[]",
+        "name": "swaps_",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "encodeSwapToMake32List",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "swapInfo",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "swapPriceProtection",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapToMakeObj32[]",
+        "name": "swaps",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes1",
+        "name": "exchangeId_",
+        "type": "bytes1"
+      },
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_cashAmountToSwap_",
+        "type": "int128"
+      },
+      {
+        "internalType": "int128",
+        "name": "swapPriceProtection_assetAmountToSwap_",
+        "type": "int128"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapCallDataExt_",
+        "type": "bytes"
+      }
+    ],
+    "name": "encodeSwapToMake32WithoutObject",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "swapInfo",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "swapPriceProtection",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapToMakeObj32",
+        "name": "swap",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategyHub_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strategyNum_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int8",
+        "name": "order_",
+        "type": "int8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceProtection_cashAmountPer1Asset_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "withdrawAllDestinationIfFullExit_",
+        "type": "string"
+      }
+    ],
+    "name": "encodeTradeInfo",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "tradeInfo",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawNow",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToOwner",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WithdrawToEncodeObj",
+        "name": "withdraw_",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeWithdraw",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "withdrawInstructions",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawNow",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToOwner",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WithdrawToEncodeObj[]",
+        "name": "withdraws_",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "encodeWithdrawList",
+    "outputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "withdrawInstructions",
+        "type": "bytes[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountToWithdraw_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToOwner_",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountMinimumBalanceOfAfterSwaps_",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "exchangeId",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "int128",
+                "name": "swapPriceProtection_cashAmountToSwap",
+                "type": "int128"
+              },
+              {
+                "internalType": "int128",
+                "name": "swapPriceProtection_assetAmountToSwap",
+                "type": "int128"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapCallDataExt",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapsToEncodeObj32",
+            "name": "swapToEncode",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountPer1Asset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapsToEncode_withdrawNow_Obj32[2]",
+        "name": "swapsToEncode_exitShortThenExitLong_",
+        "type": "tuple[2]"
+      }
+    ],
+    "name": "encodeWithdrawNow_v3_0",
+    "outputs": [
+      {
+        "internalType": "bytes[2]",
+        "name": "instructions",
+        "type": "bytes[2]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountToWithdraw_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "withdrawToOwner_",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashAmountMinimumBalanceOfAfterSwaps_",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "exchangeId",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "int128",
+                "name": "swapPriceProtection_cashAmountToSwap",
+                "type": "int128"
+              },
+              {
+                "internalType": "int128",
+                "name": "swapPriceProtection_assetAmountToSwap",
+                "type": "int128"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapCallDataExt",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapsToEncodeObj32",
+            "name": "swapToEncode",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountPer1Asset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapCallDataExt",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SwapsToEncode_withdrawNow_Obj32[2]",
+        "name": "swapsToEncode_exitShortThenExitLong_",
+        "type": "tuple[2]"
+      }
+    ],
+    "name": "encodeWithdrawNow_v4_0",
+    "outputs": [
+      {
+        "internalType": "bytes[2]",
+        "name": "instructions",
+        "type": "bytes[2]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawNow",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToOwner",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawToPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAmountToWithdrawFromPortfolio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WithdrawToEncodeObj",
+        "name": "withdraw_",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeWithdraw_memory",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "withdrawInstructions",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "toc_",
+        "type": "bytes"
+      }
+    ],
+    "name": "findTableOfContents",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBTCLongPriceInUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBTCShortPriceInUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      }
+    ],
+    "name": "getPriceInUSDC",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "strategyNum_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "uint4_",
+        "type": "uint256"
+      }
+    ],
+    "name": "strategyNumAndUint4",
+    "outputs": [
+      {
+        "internalType": "bytes3",
+        "name": "",
+        "type": "bytes3"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

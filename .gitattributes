@@ -1,0 +1,3 @@
+# Every file here is kept byte for byte, never given CRLF line endings: the page admits its own inline scripts by
+# their sha256 (its Content-Security-Policy), so a checkout that changed one byte of them would leave it unable to run.
+* -text

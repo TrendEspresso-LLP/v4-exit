@@ -1,0 +1,3422 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CTRL",
+    "outputs": [
+      {
+        "internalType": "contract IController",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CTRL_ADDR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "Lib",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LibAave",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LibFrontend",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LibFrontend2",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_BTC_PER_TRADE_TX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_CASH_PER_TRADE_TX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PORTFOLIO_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract IPortfolioFactoryRequiredFunctionsExtended",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE",
+    "outputs": [
+      {
+        "internalType": "contract IERC2612",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE_ADDR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TE_NAME",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION_NOTES",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aaveDenominator",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "transferFrom_",
+        "type": "bool"
+      }
+    ],
+    "name": "adminWithdraw",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getAaveRelevantValuesOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalCollateralBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalDebtBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ltv",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint16",
+        "name": "healthFactor",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes1",
+        "name": "aaveCollateralDebt",
+        "type": "bytes1"
+      },
+      {
+        "internalType": "uint256",
+        "name": "healthFactorUint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getAaveUserDataOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getAssetShortDebtOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBTCMarketPrices",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "swap",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "Uniswap_v3_LP_tBTC",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "Uniswap_v3_LP_WBTC",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "Uniswap_v3_LP_BTCb",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "TraderJoe_v2_1_LP",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "WooFi_Router_v2",
+            "type": "uint256[2]"
+          },
+          {
+            "internalType": "uint256[2]",
+            "name": "YieldYak",
+            "type": "uint256[2]"
+          }
+        ],
+        "internalType": "struct MarketPricesObj",
+        "name": "marketPrices",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "tradesBackward_",
+        "type": "int256"
+      }
+    ],
+    "name": "getFullTradeSetOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint40",
+                "name": "timestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "int56",
+                "name": "unrealisedPnl",
+                "type": "int56"
+              },
+              {
+                "internalType": "int48",
+                "name": "unrealisedPnlPct",
+                "type": "int48"
+              },
+              {
+                "internalType": "uint56",
+                "name": "unrealisedFeesPaid",
+                "type": "uint56"
+              },
+              {
+                "internalType": "int56",
+                "name": "transfer",
+                "type": "int56"
+              },
+              {
+                "internalType": "int56",
+                "name": "totalHistoricalPnl",
+                "type": "int56"
+              },
+              {
+                "internalType": "int40",
+                "name": "totalHistoricalPnlPct",
+                "type": "int40"
+              },
+              {
+                "internalType": "uint48",
+                "name": "totalHistoricalFeesPaid",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint56",
+                "name": "totalDeposited",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint56",
+                "name": "totalWithdrawn",
+                "type": "uint56"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint56",
+                    "name": "realtime",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "pretrade",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "positionsLength",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "tradeCount",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "snapshotCount",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "bytes1",
+                    "name": "tradeStatus",
+                    "type": "bytes1"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "swapsLength",
+                    "type": "uint8"
+                  }
+                ],
+                "internalType": "struct ActiveTradeObj",
+                "name": "activeTrade",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct HistoricalSnapshotAccountObj[]",
+            "name": "snapshots",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint40",
+                "name": "timestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "uint80",
+                "name": "assetUnsoldLong",
+                "type": "uint80"
+              },
+              {
+                "internalType": "uint80",
+                "name": "assetUnsoldShort",
+                "type": "uint80"
+              },
+              {
+                "internalType": "uint16",
+                "name": "assetExtra",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint8",
+                "name": "swapsLength",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint16",
+                "name": "healthFactor",
+                "type": "uint16"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "aaveCollateralDebt",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "pendingWithdrawals",
+                "type": "bytes1"
+              }
+            ],
+            "internalType": "struct HistoricalPositionsObj[]",
+            "name": "positions",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint40",
+                "name": "timestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "int8",
+                "name": "order",
+                "type": "int8"
+              },
+              {
+                "internalType": "uint48",
+                "name": "assetCashPriceAtSwapTime",
+                "type": "uint48"
+              },
+              {
+                "internalType": "int104",
+                "name": "assetAmount",
+                "type": "int104"
+              },
+              {
+                "internalType": "int56",
+                "name": "cashAmount",
+                "type": "int56"
+              }
+            ],
+            "internalType": "struct HistoricalSwapObj[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint40",
+                "name": "timestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "int56",
+                "name": "pnl",
+                "type": "int56"
+              },
+              {
+                "internalType": "int48",
+                "name": "pnlPct",
+                "type": "int48"
+              },
+              {
+                "internalType": "uint56",
+                "name": "feesPaid",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint56",
+                "name": "posttrade",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint16",
+                "name": "positionsLength",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint64",
+                "name": "snapshotCount",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint72",
+                "name": "depositedDuringTrade",
+                "type": "uint72"
+              },
+              {
+                "internalType": "uint48",
+                "name": "withdrawnDuringTrade",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "profitFeesPaidDuringTrade",
+                "type": "uint48"
+              }
+            ],
+            "internalType": "struct HistoricalOutcomeObj",
+            "name": "outcome",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct FullTradeObj",
+        "name": "trade",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLandingPageInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "pctProfitFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsers",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "unrealisedPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "unrealisedPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "unrealisedFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalHistoricalFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "int48",
+            "name": "totalHistoricalPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "int64",
+            "name": "totalHistoricalPnl",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalRealtimeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalPretradeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint128",
+            "name": "portfolioBalance",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalCashValue",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalDeposited",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalWithdrawn",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint32",
+            "name": "accountsOmitted",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct HistoricalSnapshotPortfolioObj",
+        "name": "portfolioInfosSum",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLandingPageInfoCurrent",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "pctProfitFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsers",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "unrealisedPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "unrealisedPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "unrealisedFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalHistoricalFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "int48",
+            "name": "totalHistoricalPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "int64",
+            "name": "totalHistoricalPnl",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalRealtimeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalPretradeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint128",
+            "name": "portfolioBalance",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalCashValue",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalDeposited",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalWithdrawn",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint32",
+            "name": "accountsOmitted",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct HistoricalSnapshotPortfolioObj",
+        "name": "portfolioInfosSum",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLandingPageInfoMainnet",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "pctProfitFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsers",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "unrealisedPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "unrealisedPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "unrealisedFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalHistoricalFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "int48",
+            "name": "totalHistoricalPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "int64",
+            "name": "totalHistoricalPnl",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalRealtimeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalPretradeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint128",
+            "name": "portfolioBalance",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalCashValue",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalDeposited",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalWithdrawn",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint32",
+            "name": "accountsOmitted",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct HistoricalSnapshotPortfolioObj",
+        "name": "portfolioInfosSum",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLandingPageInfoProjected",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "pctProfitFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsers",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "unrealisedPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "unrealisedPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "unrealisedFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalHistoricalFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "int48",
+            "name": "totalHistoricalPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "int64",
+            "name": "totalHistoricalPnl",
+            "type": "int64"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalRealtimeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint72",
+            "name": "totalPretradeOfAccounts",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint128",
+            "name": "portfolioBalance",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalCashValue",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalDeposited",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "totalWithdrawn",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint32",
+            "name": "accountsOmitted",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct HistoricalSnapshotPortfolioObj",
+        "name": "portfolioInfosSum",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "portfolio_",
+        "type": "address"
+      }
+    ],
+    "name": "getListOfAllStrategyMembershipsOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint96",
+            "name": "strategyNum",
+            "type": "uint96"
+          },
+          {
+            "internalType": "address",
+            "name": "strategyHub",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct StrategyMembershipObj[]",
+        "name": "memberships",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getListOfAllTradingWallets",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "tradingWallets",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "portfolio_",
+        "type": "address"
+      }
+    ],
+    "name": "getListOfStrategyMembershipsAndNumsJoinedOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint96",
+            "name": "strategyNum",
+            "type": "uint96"
+          },
+          {
+            "internalType": "address",
+            "name": "strategyHub",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct StrategyMembershipObj[]",
+        "name": "memberships",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "strategyNums",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "portfolio_",
+        "type": "address"
+      }
+    ],
+    "name": "getListOfStrategyNumsJoinedOf",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "strategyNums",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "strategyNum_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "start_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "end_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getListOfTradingEngineInfosAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "portfolio",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "tradeStatus",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLong",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAvailableToTrade",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashToSellToFullyExitShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashShortWeighted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "cashMaxCanWithdraw",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "depositAmountCash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToOwner",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToPortfolio",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountTE",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PendingInfoObj",
+            "name": "pending",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TradingEngineInfoObj[]",
+        "name": "tradingEngineInfo",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts_",
+        "type": "address[]"
+      }
+    ],
+    "name": "getListOfTradingEngineInfosOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "portfolio",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "tradeStatus",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLong",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAvailableToTrade",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashToSellToFullyExitShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashShortWeighted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "cashMaxCanWithdraw",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "depositAmountCash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToOwner",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToPortfolio",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountTE",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PendingInfoObj",
+            "name": "pending",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TradingEngineInfoObj[]",
+        "name": "tradingEngineInfo",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "strategyNums_",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getListOfTradingEngineInfosOfOwnerAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "portfolio",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "tradeStatus",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLong",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAvailableToTrade",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashToSellToFullyExitShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashShortWeighted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "cashMaxCanWithdraw",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "depositAmountCash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToOwner",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToPortfolio",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountTE",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PendingInfoObj",
+            "name": "pending",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TradingEngineInfoObj[]",
+        "name": "tradingEngineInfo",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getPctPositionsOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "pctCash",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctLong",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctReserve",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PctPositionsObj",
+        "name": "pctPositions",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      }
+    ],
+    "name": "getPriceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "order_",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "slippageBps_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellAmount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cexPrice_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "asset_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "cash_",
+        "type": "address"
+      }
+    ],
+    "name": "getQuote",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sellToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "buyToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBuyAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceCEX",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceDEX",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pricePossible",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceLikely",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slippageBps",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct QuoteObj",
+        "name": "quote",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getRealtimeStateOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "unrealisedPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "unrealisedPnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "unrealisedFeesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "int56",
+            "name": "transfer",
+            "type": "int56"
+          },
+          {
+            "internalType": "int56",
+            "name": "totalHistoricalPnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int40",
+            "name": "totalHistoricalPnlPct",
+            "type": "int40"
+          },
+          {
+            "internalType": "uint48",
+            "name": "totalHistoricalFeesPaid",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalDeposited",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "totalWithdrawn",
+            "type": "uint56"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint56",
+                "name": "realtime",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint56",
+                "name": "pretrade",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint16",
+                "name": "positionsLength",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint56",
+                "name": "tradeCount",
+                "type": "uint56"
+              },
+              {
+                "internalType": "uint56",
+                "name": "snapshotCount",
+                "type": "uint56"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "tradeStatus",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "uint8",
+                "name": "swapsLength",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct ActiveTradeObj",
+            "name": "activeTrade",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct HistoricalSnapshotAccountObj",
+        "name": "realtimeSnapshot",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint80",
+            "name": "assetUnsoldLong",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint80",
+            "name": "assetUnsoldShort",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint16",
+            "name": "assetExtra",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "swapsLength",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "healthFactor",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "aaveCollateralDebt",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "pendingWithdrawals",
+            "type": "bytes1"
+          }
+        ],
+        "internalType": "struct HistoricalPositionsObj",
+        "name": "realtimePositions",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int56",
+            "name": "pnl",
+            "type": "int56"
+          },
+          {
+            "internalType": "int48",
+            "name": "pnlPct",
+            "type": "int48"
+          },
+          {
+            "internalType": "uint56",
+            "name": "feesPaid",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint56",
+            "name": "posttrade",
+            "type": "uint56"
+          },
+          {
+            "internalType": "uint16",
+            "name": "positionsLength",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint64",
+            "name": "snapshotCount",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint72",
+            "name": "depositedDuringTrade",
+            "type": "uint72"
+          },
+          {
+            "internalType": "uint48",
+            "name": "withdrawnDuringTrade",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "profitFeesPaidDuringTrade",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct HistoricalOutcomeObj",
+        "name": "realtimeOutcome",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "timestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "int8",
+            "name": "order",
+            "type": "int8"
+          },
+          {
+            "internalType": "uint48",
+            "name": "assetCashPriceAtSwapTime",
+            "type": "uint48"
+          },
+          {
+            "internalType": "int104",
+            "name": "assetAmount",
+            "type": "int104"
+          },
+          {
+            "internalType": "int56",
+            "name": "cashAmount",
+            "type": "int56"
+          }
+        ],
+        "internalType": "struct HistoricalSwapObj",
+        "name": "previousSwap",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes1",
+            "name": "tradeStatus",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradeCount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ltv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCollateralBase",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalDebtBase",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RawValuesObj",
+        "name": "rawValues",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSettings",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[2]",
+            "name": "perSwapFeeTokens",
+            "type": "address[2]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perSwapFeeInUSDStable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perSwapFeeInTE",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minHealthFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctMaxToBorrow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctSlippageGeneral",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctSlippageBalanceCheck",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "pctSlippageWithdrawNowPctPositions",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "pctSlippageWithdrawNowCashBalanceChange",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctSlippageBalanceCheckAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctAutoDepositIntoAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "enableAutoDepositIntoAave",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "thousandsUSDStableAutoDepositIntoAave",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "thousandsCashForcePriceProtection",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctMinProfitFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctProfitFeeCliff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pctProfitFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "teNeededForOnePctReductionOfProfitFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "swapAssetExtraExchange",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "bool",
+            "name": "enforcePermissions",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawAll",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumBalanceWholeCashTokens",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumBalanceCash",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "fromStorage",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SettingsObj",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getShortFullExitAssetToBuyOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "assetToBuy",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getShortFullExitCashToSellOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner_",
+        "type": "address"
+      }
+    ],
+    "name": "getSystemSummaryOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "portfolio",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "yourProfitFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "cashBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "teBalance",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "unrealisedPnl",
+                    "type": "int56"
+                  },
+                  {
+                    "internalType": "int48",
+                    "name": "unrealisedPnlPct",
+                    "type": "int48"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "unrealisedFeesPaid",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "totalHistoricalFeesPaid",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "int48",
+                    "name": "totalHistoricalPnlPct",
+                    "type": "int48"
+                  },
+                  {
+                    "internalType": "int64",
+                    "name": "totalHistoricalPnl",
+                    "type": "int64"
+                  },
+                  {
+                    "internalType": "uint72",
+                    "name": "totalRealtimeOfAccounts",
+                    "type": "uint72"
+                  },
+                  {
+                    "internalType": "uint72",
+                    "name": "totalPretradeOfAccounts",
+                    "type": "uint72"
+                  },
+                  {
+                    "internalType": "uint128",
+                    "name": "portfolioBalance",
+                    "type": "uint128"
+                  },
+                  {
+                    "internalType": "uint128",
+                    "name": "totalCashValue",
+                    "type": "uint128"
+                  },
+                  {
+                    "internalType": "uint128",
+                    "name": "totalDeposited",
+                    "type": "uint128"
+                  },
+                  {
+                    "internalType": "uint128",
+                    "name": "totalWithdrawn",
+                    "type": "uint128"
+                  },
+                  {
+                    "internalType": "uint32",
+                    "name": "accountsOmitted",
+                    "type": "uint32"
+                  }
+                ],
+                "internalType": "struct HistoricalSnapshotPortfolioObj",
+                "name": "realtimeSnapshot",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "accountNum",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "strategyNum",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint40",
+                        "name": "timestamp",
+                        "type": "uint40"
+                      },
+                      {
+                        "internalType": "int56",
+                        "name": "unrealisedPnl",
+                        "type": "int56"
+                      },
+                      {
+                        "internalType": "int48",
+                        "name": "unrealisedPnlPct",
+                        "type": "int48"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "unrealisedFeesPaid",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "int56",
+                        "name": "transfer",
+                        "type": "int56"
+                      },
+                      {
+                        "internalType": "int56",
+                        "name": "totalHistoricalPnl",
+                        "type": "int56"
+                      },
+                      {
+                        "internalType": "int40",
+                        "name": "totalHistoricalPnlPct",
+                        "type": "int40"
+                      },
+                      {
+                        "internalType": "uint48",
+                        "name": "totalHistoricalFeesPaid",
+                        "type": "uint48"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "totalDeposited",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "totalWithdrawn",
+                        "type": "uint56"
+                      },
+                      {
+                        "components": [
+                          {
+                            "internalType": "uint56",
+                            "name": "realtime",
+                            "type": "uint56"
+                          },
+                          {
+                            "internalType": "uint56",
+                            "name": "pretrade",
+                            "type": "uint56"
+                          },
+                          {
+                            "internalType": "uint16",
+                            "name": "positionsLength",
+                            "type": "uint16"
+                          },
+                          {
+                            "internalType": "uint56",
+                            "name": "tradeCount",
+                            "type": "uint56"
+                          },
+                          {
+                            "internalType": "uint56",
+                            "name": "snapshotCount",
+                            "type": "uint56"
+                          },
+                          {
+                            "internalType": "bytes1",
+                            "name": "tradeStatus",
+                            "type": "bytes1"
+                          },
+                          {
+                            "internalType": "uint8",
+                            "name": "swapsLength",
+                            "type": "uint8"
+                          }
+                        ],
+                        "internalType": "struct ActiveTradeObj",
+                        "name": "activeTrade",
+                        "type": "tuple"
+                      }
+                    ],
+                    "internalType": "struct HistoricalSnapshotAccountObj",
+                    "name": "realtimeSnapshot",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct PortfolioAccountInfoObj[]",
+                "name": "accounts",
+                "type": "tuple[]"
+              }
+            ],
+            "internalType": "struct SysPortfolioInfoObj",
+            "name": "Portfolio",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "owner",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "portfolio",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "tradeStatus",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "strategyNum",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetLong",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetShort",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetLongAvailable",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetShortAvailable",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "cashBalanceOf",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "cashAvailableToTrade",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "cashToSellToFullyExitShort",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "cashShortWeighted",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "cashMaxCanWithdraw",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalCashValue",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint256",
+                        "name": "depositAmountCash",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "withdrawAmountCashToOwner",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "withdrawAmountCashToPortfolio",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "withdrawAmountTE",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct PendingInfoObj",
+                    "name": "pending",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct TradingEngineInfoObj",
+                "name": "tradingEngineInfo",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "unrealisedPnl",
+                    "type": "int56"
+                  },
+                  {
+                    "internalType": "int48",
+                    "name": "unrealisedPnlPct",
+                    "type": "int48"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "unrealisedFeesPaid",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "transfer",
+                    "type": "int56"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "totalHistoricalPnl",
+                    "type": "int56"
+                  },
+                  {
+                    "internalType": "int40",
+                    "name": "totalHistoricalPnlPct",
+                    "type": "int40"
+                  },
+                  {
+                    "internalType": "uint48",
+                    "name": "totalHistoricalFeesPaid",
+                    "type": "uint48"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "totalDeposited",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "totalWithdrawn",
+                    "type": "uint56"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint56",
+                        "name": "realtime",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "pretrade",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "uint16",
+                        "name": "positionsLength",
+                        "type": "uint16"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "tradeCount",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "uint56",
+                        "name": "snapshotCount",
+                        "type": "uint56"
+                      },
+                      {
+                        "internalType": "bytes1",
+                        "name": "tradeStatus",
+                        "type": "bytes1"
+                      },
+                      {
+                        "internalType": "uint8",
+                        "name": "swapsLength",
+                        "type": "uint8"
+                      }
+                    ],
+                    "internalType": "struct ActiveTradeObj",
+                    "name": "activeTrade",
+                    "type": "tuple"
+                  }
+                ],
+                "internalType": "struct HistoricalSnapshotAccountObj",
+                "name": "realtimeSnapshot",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                  },
+                  {
+                    "internalType": "uint80",
+                    "name": "assetUnsoldLong",
+                    "type": "uint80"
+                  },
+                  {
+                    "internalType": "uint80",
+                    "name": "assetUnsoldShort",
+                    "type": "uint80"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "assetExtra",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "swapsLength",
+                    "type": "uint8"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "healthFactor",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "bytes1",
+                    "name": "aaveCollateralDebt",
+                    "type": "bytes1"
+                  },
+                  {
+                    "internalType": "bytes1",
+                    "name": "pendingWithdrawals",
+                    "type": "bytes1"
+                  }
+                ],
+                "internalType": "struct HistoricalPositionsObj",
+                "name": "realtimePositions",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int256",
+                    "name": "pctCash",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "pctLong",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "pctShort",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "pctReserve",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalCashValue",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct PctPositionsObj",
+                "name": "pctPositions",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bytes1",
+                    "name": "tradeStatus",
+                    "type": "bytes1"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "tradeCount",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "ltv",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalCollateralBase",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalDebtBase",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "cashBalanceOf",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetLongBalanceOf",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetLongPrice",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetShortBalanceOf",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetShortPrice",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalCashValue",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct RawValuesObj",
+                "name": "rawValues",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                  },
+                  {
+                    "internalType": "int8",
+                    "name": "order",
+                    "type": "int8"
+                  },
+                  {
+                    "internalType": "uint48",
+                    "name": "assetCashPriceAtSwapTime",
+                    "type": "uint48"
+                  },
+                  {
+                    "internalType": "int104",
+                    "name": "assetAmount",
+                    "type": "int104"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "cashAmount",
+                    "type": "int56"
+                  }
+                ],
+                "internalType": "struct HistoricalSwapObj",
+                "name": "previousSwap",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint40",
+                    "name": "timestamp",
+                    "type": "uint40"
+                  },
+                  {
+                    "internalType": "int56",
+                    "name": "pnl",
+                    "type": "int56"
+                  },
+                  {
+                    "internalType": "int48",
+                    "name": "pnlPct",
+                    "type": "int48"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "feesPaid",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint56",
+                    "name": "posttrade",
+                    "type": "uint56"
+                  },
+                  {
+                    "internalType": "uint16",
+                    "name": "positionsLength",
+                    "type": "uint16"
+                  },
+                  {
+                    "internalType": "uint64",
+                    "name": "snapshotCount",
+                    "type": "uint64"
+                  },
+                  {
+                    "internalType": "uint72",
+                    "name": "depositedDuringTrade",
+                    "type": "uint72"
+                  },
+                  {
+                    "internalType": "uint48",
+                    "name": "withdrawnDuringTrade",
+                    "type": "uint48"
+                  },
+                  {
+                    "internalType": "uint48",
+                    "name": "profitFeesPaidDuringTrade",
+                    "type": "uint48"
+                  }
+                ],
+                "internalType": "struct HistoricalOutcomeObj[5]",
+                "name": "previousTrades",
+                "type": "tuple[5]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "yourProfitFee",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SysAccountInfoObj[]",
+            "name": "Accounts",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint40",
+                "name": "timestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "string",
+                "name": "versionNotes",
+                "type": "string"
+              },
+              {
+                "internalType": "address",
+                "name": "admin",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "admin2",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "admin3",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "frontend",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "frontend2",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "encodeDecode",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "swapAssetExtra",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tradingSignature",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "referrals",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct AddressBookObj",
+            "name": "AddressBook",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address[2]",
+                "name": "perSwapFeeTokens",
+                "type": "address[2]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "perSwapFeeInUSDStable",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "perSwapFeeInTE",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minHealthFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctMaxToBorrow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctSlippageGeneral",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctSlippageBalanceCheck",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "pctSlippageWithdrawNowPctPositions",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "pctSlippageWithdrawNowCashBalanceChange",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctSlippageBalanceCheckAave",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctAutoDepositIntoAave",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "enableAutoDepositIntoAave",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "thousandsUSDStableAutoDepositIntoAave",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "thousandsCashForcePriceProtection",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctMinProfitFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctProfitFeeCliff",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pctProfitFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "teNeededForOnePctReductionOfProfitFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "swapAssetExtraExchange",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "bool",
+                "name": "enforcePermissions",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "withdrawAll",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minimumBalanceWholeCashTokens",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minimumBalanceCash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "fromStorage",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SettingsObj",
+            "name": "Settings",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SystemSummaryObj",
+        "name": "systemSummary",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet_",
+        "type": "address"
+      }
+    ],
+    "name": "getTeBalanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getTradeStatusOf",
+    "outputs": [
+      {
+        "internalType": "bytes1",
+        "name": "tradeStatus",
+        "type": "bytes1"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "getTradingEngineInfoOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "portfolio",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "tradeStatus",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyNum",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLong",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetLongAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetShortAvailable",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashAvailableToTrade",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashToSellToFullyExitShort",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashShortWeighted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "cashMaxCanWithdraw",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalCashValue",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "depositAmountCash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToOwner",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountCashToPortfolio",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "withdrawAmountTE",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PendingInfoObj",
+            "name": "pending",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TradingEngineInfoObj",
+        "name": "tradingEngineInfo",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "offset",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct GaslessTransferObj",
+        "name": "gaslessTransfer",
+        "type": "tuple"
+      }
+    ],
+    "name": "permitAndTransferToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "projection",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "cashValueFloor",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "cashValueAdded",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "feesBase",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "feesAccruedPerDay",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint40",
+        "name": "feesAccrueFrom",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint16",
+        "name": "usersMultiplier",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "pnlFeesMultiplier",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "pnlIntoCashPctBps",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "setOffset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "cashValueFloor",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "cashValueAdded",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "feesBase",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "feesAccruedPerDay",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint40",
+            "name": "feesAccrueFrom",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint16",
+            "name": "usersMultiplier",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pnlFeesMultiplier",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pnlIntoCashPctBps",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct LandingPageProjectionObj",
+        "name": "projection_",
+        "type": "tuple"
+      }
+    ],
+    "name": "setProjection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "teTransferLockout",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
